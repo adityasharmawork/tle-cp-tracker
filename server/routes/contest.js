@@ -6,11 +6,17 @@ const { getUpcomingCodeforcesContests } = require('../controllers/upcomingCodefo
 const { getUpcomingCodechefContests } = require('../controllers/upcomingCodechefController');
 const { getPastCodechefContests } = require('../controllers/pastCodechefController');
 const { getPastCodeforcesContests } = require('../controllers/pastCodeforcesController');
+const { getLeetcodeContests } = require('../controllers/leetcodeController');
+const { getUpcomingLeetcodeContests } = require('../controllers/upcomingLeetcodeController');
+const { getPastLeetcodeContests } = require('../controllers/pastLeetcodeController');
 // const verifyToken = require('../middlewares/auth');
 
 // router.get('/codeforces', verifyToken, getCodeforcesContests);
 
 router.get('/codeforces', getCodeforcesContests);
+router.get('/leetcode', getLeetcodeContests);
+router.get('/upcomingleetcode', getUpcomingLeetcodeContests);
+router.get('/pastleetcode', getPastLeetcodeContests);
 router.get('/upcomingcodeforces', getUpcomingCodeforcesContests);
 router.get('/pastcodeforces', getPastCodeforcesContests);
 router.get('/upcomingcodechef', getUpcomingCodechefContests);
