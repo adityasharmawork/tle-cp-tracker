@@ -13,11 +13,11 @@ app.use(express.json());
 
 app.use("/api", contestRoutes);
 
-// app.get("/", (req, res) => {
-//     res.json({
-//         message: "Welcome to TLE CP Tracker!"
-//     });
-// });
+app.get("/", (req, res) => {
+    res.json({
+        message: "Welcome to TLE CP Tracker!"
+    });
+});
 
 
 app.listen(port, () => {
