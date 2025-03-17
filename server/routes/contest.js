@@ -34,7 +34,7 @@ const leetcodeRoutes = require("./leetcodeRoutes/contest");
 
 
 router.use('/codeforces', codeforcesRoutes);
-// router.use('/leetcode', leetcodeRoutes);
+router.use('/leetcode', leetcodeRoutes);
 // router.use('/codechef', codechefRoutes);
 
 
