@@ -46,7 +46,7 @@ TLE CP-Tracker is a **Contest Tracking Web Application** built using the **MERN 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/tle-cp-tracker.git
+git clone [https://github.com/yourusername/tle-cp-tracker.git](https://github.com/adityasharmawork/tle-cp-tracker)
 cd tle-cp-tracker
 ```
 
@@ -85,18 +85,9 @@ npm start
 ## 📜 API Endpoints
 
 ### **Contests API**
-- `GET /api/contests/upcoming` → Fetch all upcoming contests
-- `GET /api/contests/past` → Fetch past contests
-- `GET /api/contests/:platform` → Fetch contests filtered by platform
-
-### **Bookmarks API**
-- `POST /api/bookmarks` → Add a contest to bookmarks
-- `GET /api/bookmarks` → Get all bookmarked contests
-- `DELETE /api/bookmarks/:id` → Remove a bookmarked contest
-
-### **Solutions API**
-- `POST /api/solutions` → Attach a YouTube solution link to a contest
-- `GET /api/solutions/:contestId` → Fetch solution links for a contest
+- `GET /api/platform` → Fetch all contests of that platform
+- `GET /api/platform/upcoming` → Fetch upcoming contests of that platform
+- `GET /api/platform/past` → Fetch past contests of that platform
 
 ---
 ## 📌 Deployment
@@ -119,14 +110,6 @@ npm start
 - **Notification System** for upcoming contests
 - **Leaderboard & Streaks** for motivation
 - **Discussion Forum** for problem-solving
-
----
-## 🤝 Contributing
-Feel free to raise issues and contribute via pull requests.
-
----
-## 📞 Contact & Support
-For any queries, reach out via **[TLE Eliminators YouTube Channel](https://www.youtube.com/c/TLEEliminators)**.
 
 ---
 ## 🌟 Show Your Support
